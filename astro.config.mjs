@@ -6,7 +6,7 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://scarlettassistant/",
+  site: "https://scarletassistant.github.io",
   base: "/scarlett-blog",
   integrations: [mdx(), sitemap()],
 });
