@@ -3,10 +3,11 @@
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import { defineConfig } from "astro/config";
+import relativeLinks from "astro-relative-links";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://scarletassistant.github.io",
-  base: "/scarlett-blog",
-  integrations: [mdx(), sitemap()],
+  base: "/scarlett-blog/",
+  integrations: [mdx(), sitemap(), relativeLinks()],
 });
